@@ -1,0 +1,8 @@
+# mk.sh と make でできるファイル（本の env/clean.bat と makefile の clean が消すもの）
+*.bin
+*.img
+*.lst
+*.efi
+
+# macOS
+.DS_Store
