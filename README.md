@@ -28,7 +28,9 @@
 
    QEMU のウィンドウが開いて「Booting from Hard Disk...」で止まれば、14.1 の「何もしない」ブートプログラムが動いている
 
-`mk.sh` は、`kernel.s` があれば `boot.s` と一緒に組み立ててつなげ、なければ `boot.s` だけを組み立てる。`boot.sh` は `boot.img` を QEMU で起動する（後ろに書いた引数はそのまま QEMU に渡る）。
+   QEMU のウィンドウは、Retina の画面だととても小さく開く。`boot.sh` は Mac では Zoom To Fit の状態で開くので、ウィンドウの端をドラッグして広げると画面も一緒に大きくなる。メニューの Zoom Interpolation はオフのままにしておくと、ドットがにじまずくっきり見える
+
+`mk.sh` は、`kernel.s` があれば `boot.s` と一緒に組み立ててつなげ、なければ `boot.s` だけを組み立てる。`boot.sh` は `boot.img` を QEMU で起動する。Mac では `-display cocoa,zoom-to-fit=on` を付ける。後ろに書いた引数はそのまま QEMU に渡り、`-display` は後ろに書いたほうが使われるので、`boot.sh -display none` のように上書きもできる。
 
 第 4 部（UEFI で起動する 64 ビット OS）は、本と同じく節のフォルダで `make` を打って組み立てる。起動のしかたは、第 4 部まで進んだら書き足す。
 
