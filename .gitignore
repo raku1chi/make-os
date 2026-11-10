@@ -4,5 +4,8 @@
 *.lst
 *.efi
 
+# Bochs が使用中のディスクイメージに付ける印（落ちると残る）
+*.lock
+
 # macOS
 .DS_Store
