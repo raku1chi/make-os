@@ -1,2 +1,4 @@
-# シェルスクリプトは、どこでクローンしても LF のままにする（CRLF だと動かない）
+# Mac で使うファイルは、どこでクローンしても LF のままにする（CRLF だと動かない）
 *.sh text eol=lf
+*-mac.bxrc text eol=lf
+*-mac.init text eol=lf
